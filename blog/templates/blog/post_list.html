@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Puppy Overflow!</title>
+    </head>
+
+    <body>
+        <div>
+            <h1><a href="">OMG Puppies!!!!</a></h1>
+        </div>
+
+        <div>
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text | linebreaks }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>
